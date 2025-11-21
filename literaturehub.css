@@ -1,0 +1,89 @@
+/* === General Styles === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* === Header === */
+header {
+  background-color: #3b3b98;
+  color: white;
+  text-align: center;
+  padding: 1.5em 1em;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+
+.tagline {
+  font-style: italic;
+  margin-top: 0.5em;
+  color: #dcdcdc;
+}
+
+/* === Navigation === */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Main Content === */
+main {
+  max-width: 900px;
+  margin: 2em auto;
+  padding: 0 1em;
+}
+
+.intro, .highlight {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 8px;
+  margin-bottom: 1.5em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.button {
+  display: inline-block;
+  background-color: #3b3b98;
+  color: white;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+}
+
+.button:hover {
+  background-color: #2e2e7a;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: #e0e0e0;
+  padding: 1em;
+  font-size: 0.9em;
+}
