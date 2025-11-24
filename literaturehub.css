@@ -1,3 +1,4 @@
+
 /* === General Styles === */
 * {
   box-sizing: border-box;
@@ -6,15 +7,15 @@
 body {
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
-  background-color: #f8f8f8;
-  color: #333;
+  background-color: #FEFEFA; /* off-white background */
+  color: #333333;             /* dark text */
   line-height: 1.6;
 }
 
 /* === Header === */
 header {
-  background-color: #3b3b98;
-  color: white;
+  background-color: #2C3E50; /* deep navy */
+  color: #F8F8F2;            /* light cream text */
   text-align: center;
   padding: 1.5em 1em;
 }
@@ -28,7 +29,7 @@ header h1 {
 .tagline {
   font-style: italic;
   margin-top: 0.5em;
-  color: #dcdcdc;
+  color: #F8F8F2;
 }
 
 /* === Navigation === */
@@ -42,12 +43,13 @@ nav ul {
 }
 
 nav a {
-  color: white;
+  color: #F1C40F; /* soft gold */
   text-decoration: none;
   font-weight: bold;
 }
 
 nav a:hover {
+  color: #F39C12; /* bright gold */
   text-decoration: underline;
 }
 
@@ -59,31 +61,138 @@ main {
 }
 
 .intro, .highlight {
-  background-color: white;
+  background-color: #FFFFFF; /* white for cards/sections */
   padding: 1.5em;
   border-radius: 8px;
   margin-bottom: 1.5em;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+.authors-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  margin-top: 1em;
+}
+
+.author-card {
+  background-color: #FEFEFA;
+  border: 1px solid #DDD;
+  padding: 1em;
+  border-radius: 6px;
+  flex: 1 1 250px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.author-card img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 50%; /* circular images */
+  margin-bottom: 0.5em;
+}
+
+.author-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: #2C3E50; /* navy for titles */
+}
+
+.author-card p {
+  margin: 0;
+  color: #555555; /* slightly lighter text */
+}
+
+/* Buttons */
 .button {
+  display: inline-block;
+  background-color: #34495E; /* navy button */
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0.6em 1em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #E67E22; /* warm orange hover */
+  color: #FFFFFF;
+}
+
+/* === Forms === */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+input, textarea {
+  padding: 0.5em;
+  border: 1px solid #CCC;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input[type="submit"], button {
+  width: auto;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: #ECECEC; /* light gray */
+  padding: 1em;
+  font-size: 0.9em;
+  color: #555555;
+}
+/* === Story Cards === */
+.stories-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.story-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  padding: 1.5em;
+  max-width: 280px;
+  flex: 1 1 250px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.story-card h3 {
+  margin-top: 0;
+  color: #3b3b98;
+}
+
+.story-card p {
+  font-size: 0.95em;
+  color: #555;
+}
+
+.story-card .button {
   display: inline-block;
   background-color: #3b3b98;
   color: white;
   text-decoration: none;
   padding: 0.6em 1em;
   border-radius: 5px;
-  margin-top: 0.5em;
+  margin-top: 0.8em;
+  transition: background-color 0.2s ease;
 }
 
-.button:hover {
+.story-card .button:hover {
   background-color: #2e2e7a;
-}
-
-/* === Footer === */
-footer {
-  text-align: center;
-  background-color: #e0e0e0;
-  padding: 1em;
-  font-size: 0.9em;
 }
