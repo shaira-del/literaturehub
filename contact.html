@@ -5,11 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Literature Hub</title>
-  
-  <!-- Meta tags for SEO & rubric -->
-  <meta name="description" content="Contact Literature Hub for questions, feedback, or literary discussion.">
-  <meta name="keywords" content="contact, literature hub, feedback, questions, authors, stories">
-  
   <link rel="stylesheet" href="literaturehub.css">
 </head>
 <body>
@@ -33,13 +28,16 @@
       <h2>Get in Touch</h2>
       <p>Please fill out the form below. We’ll respond as soon as possible.</p>
 
-      <!-- Using FormSubmit for easy email handling -->
-      <form action="https://formsubmit.co/literaturehub@gmail.com" method="POST">
+      <!-- FormSubmit contact form -->
+      <form action="https://formsubmit.co/example@example.com" method="POST">
+        <!-- Replace example@example.com with your real email if you want messages sent there -->
+        <input type="hidden" name="_captcha" value="false"> <!-- disables captcha -->
+
         <label for="name">Full Name:</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
 
         <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        <input type="email" id="email" name="_replyto" placeholder="you@example.com" required>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
@@ -49,9 +47,9 @@
     </section>
 
     <section id="contact-info">
-      <h2>Other Ways to Contact</h2>
-      <p>If you have questions, suggestions, or requests, feel free to contact us anytime.</p>
-      <p>Email: <a href="mailto:literaturehub@gmail.com">literaturehub@gmail.com</a></p>
+      <h2>Contact Information</h2>
+      <p>If you have any questions, suggestions, or requests, feel free to contact us anytime.</p>
+      <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
     </section>
   </main>
 
