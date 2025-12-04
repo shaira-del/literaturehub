@@ -7,15 +7,15 @@
 body {
   font-family: Georgia, "Times New Roman", serif;
   margin: 0;
-  background-color: #FEFEFA; /* off-white background */
-  color: #333333;             /* dark text */
+  background-color: #FEFEFA;
+  color: #333333;
   line-height: 1.6;
 }
 
 /* === Header === */
 header {
-  background-color: #2C3E50; /* deep navy */
-  color: #F8F8F2;            /* light cream text */
+  background-color: #2C3E50;
+  color: #F8F8F2;
   text-align: center;
   padding: 1.5em 1em;
 }
@@ -43,13 +43,13 @@ nav ul {
 }
 
 nav a {
-  color: #F1C40F; /* soft gold */
+  color: #F1C40F;
   text-decoration: none;
   font-weight: bold;
 }
 
-nav a:hover {
-  color: #F39C12; /* bright gold */
+nav a:hover, nav a.active {
+  color: #F39C12;
   text-decoration: underline;
 }
 
@@ -61,18 +61,20 @@ main {
 }
 
 .intro, .highlight {
-  background-color: #FFFFFF; /* white for cards/sections */
+  background-color: #FFFFFF;
   padding: 1.5em;
   border-radius: 8px;
   margin-bottom: 1.5em;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+/* === Author Cards === */
 .authors-cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
   margin-top: 1em;
+  justify-content: center;
 }
 
 .author-card {
@@ -82,30 +84,81 @@ main {
   border-radius: 6px;
   flex: 1 1 250px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .author-card img {
   width: 100%;
   max-width: 150px;
-  border-radius: 50%; /* circular images */
+  border-radius: 50%;
   margin-bottom: 0.5em;
 }
 
-.author-card h4 {
+.author-card h3 {
   margin-top: 0;
   margin-bottom: 0.5em;
-  color: #2C3E50; /* navy for titles */
+  color: #2C3E50;
 }
 
 .author-card p {
   margin: 0;
-  color: #555555; /* slightly lighter text */
+  color: #555555;
 }
 
-/* Buttons */
+/* === Responsive YouTube Video === */
+.author-video {
+  margin-top: 1em;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.author-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* === Table Styles === */
+.authors-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.authors-table th, .authors-table td {
+  padding: 0.8em 1em;
+  border: 1px solid #DDD;
+  text-align: left;
+}
+
+.authors-table th {
+  background-color: #2C3E50;
+  color: #F8F8F2;
+}
+
+.authors-table tr:nth-child(even) {
+  background-color: #FAFAFA;
+}
+
+.authors-table tr:hover {
+  background-color: #F1F1F1;
+}
+
+/* === Buttons === */
 .button {
   display: inline-block;
-  background-color: #34495E; /* navy button */
+  background-color: #34495E;
   color: #FFFFFF;
   text-decoration: none;
   padding: 0.6em 1em;
@@ -115,84 +168,27 @@ main {
 }
 
 .button:hover {
-  background-color: #E67E22; /* warm orange hover */
+  background-color: #E67E22;
   color: #FFFFFF;
-}
-
-/* === Forms === */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-input, textarea {
-  padding: 0.5em;
-  border: 1px solid #CCC;
-  border-radius: 4px;
-  width: 100%;
-}
-
-input[type="submit"], button {
-  width: auto;
-  cursor: pointer;
-  font-weight: bold;
 }
 
 /* === Footer === */
 footer {
   text-align: center;
-  background-color: #ECECEC; /* light gray */
+  background-color: #ECECEC;
   padding: 1em;
   font-size: 0.9em;
   color: #555555;
 }
-/* === Story Cards === */
-.stories-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5em;
-  justify-content: center;
-  margin-top: 1em;
-}
 
-.story-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
-  padding: 1.5em;
-  max-width: 280px;
-  flex: 1 1 250px;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
+/* === Responsive Author Cards === */
+@media screen and (max-width: 768px) {
+  .authors-cards {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.story-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.story-card h3 {
-  margin-top: 0;
-  color: #3b3b98;
-}
-
-.story-card p {
-  font-size: 0.95em;
-  color: #555;
-}
-
-.story-card .button {
-  display: inline-block;
-  background-color: #3b3b98;
-  color: white;
-  text-decoration: none;
-  padding: 0.6em 1em;
-  border-radius: 5px;
-  margin-top: 0.8em;
-  transition: background-color 0.2s ease;
-}
-
-.story-card .button:hover {
-  background-color: #2e2e7a;
+  .author-card {
+    width: 90%;
+  }
 }

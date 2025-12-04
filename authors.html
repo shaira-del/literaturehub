@@ -1,11 +1,15 @@
 
-authors.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Authors – Literature Hub</title>
+  
+  <!-- Meta tags for SEO & rubric -->
+  <meta name="description" content="Explore the lives and works of influential authors from around the world.">
+  <meta name="keywords" content="authors, literature, Ernest Hemingway, William Faulkner, Albert Camus, books, stories">
+
   <link rel="stylesheet" href="literaturehub.css">
 </head>
 <body>
@@ -15,7 +19,7 @@ authors.html
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="authors.html">Authors</a></li>
+        <li><a href="authors.html" class="active">Authors</a></li>
         <li><a href="stories.html">Stories</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="tips.html">Reading Tips</a></li>
@@ -25,41 +29,80 @@ authors.html
   </header>
 
   <main>
+    <!-- Introduction -->
     <section class="intro">
       <h2>Featured Authors</h2>
       <p>Learn about influential writers and their contributions to literature.</p>
     </section>
 
+    <!-- Author Cards -->
     <section class="authors-cards">
-      <!-- Ernest Hemingway -->
       <div class="author-card">
         <img src="images/hemingway.jpg" alt="Ernest Hemingway">
-        <h4>Ernest Hemingway</h4>
+        <h3>Ernest Hemingway</h3>
         <p>
           Nobel Prize-winning American author known for <em>The Old Man and the Sea</em> and <em>A Farewell to Arms</em>.
           <a href="https://www.britannica.com/biography/Ernest-Hemingway" target="_blank">Learn more</a>
         </p>
+
+        <!-- Embedded YouTube Video -->
+        <div class="author-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/0B3N5uNV2Y0" 
+                  title="Ernest Hemingway Documentary" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen>
+          </iframe>
+        </div>
       </div>
 
-      <!-- William Faulkner -->
       <div class="author-card">
         <img src="images/faulkner.jpg" alt="William Faulkner">
-        <h4>William Faulkner</h4>
+        <h3>William Faulkner</h3>
         <p>
           American novelist and Nobel laureate known for <em>The Sound and the Fury</em> and <em>As I Lay Dying</em>.
           <a href="https://www.britannica.com/biography/William-Faulkner" target="_blank">Learn more</a>
         </p>
       </div>
 
-      <!-- Albert Camus -->
       <div class="author-card">
         <img src="images/camus.jpg" alt="Albert Camus">
-        <h4>Albert Camus</h4>
+        <h3>Albert Camus</h3>
         <p>
           French philosopher, author, and journalist, famous for <em>The Stranger</em> and <em>The Plague</em>.
           <a href="https://www.britannica.com/biography/Albert-Camus" target="_blank">Learn more</a>
         </p>
       </div>
+    </section>
+
+    <!-- Required Authors Table -->
+    <section class="authors-table">
+      <h2>Authors and Their Notable Works</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Author</th>
+            <th>Nationality</th>
+            <th>Notable Works</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ernest Hemingway</td>
+            <td>American</td>
+            <td>The Old Man and the Sea, A Farewell to Arms</td>
+          </tr>
+          <tr>
+            <td>William Faulkner</td>
+            <td>American</td>
+            <td>The Sound and the Fury, As I Lay Dying</td>
+          </tr>
+          <tr>
+            <td>Albert Camus</td>
+            <td>French</td>
+            <td>The Stranger, The Plague</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
   </main>
 

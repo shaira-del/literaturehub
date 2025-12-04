@@ -1,9 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact – Literature Hub</title>
+  
+  <!-- Meta tags for SEO & rubric -->
+  <meta name="description" content="Contact Literature Hub for questions, feedback, or literary discussion.">
+  <meta name="keywords" content="contact, literature hub, feedback, questions, authors, stories">
+  
   <link rel="stylesheet" href="literaturehub.css">
 </head>
 <body>
@@ -17,7 +23,7 @@
         <li><a href="stories.html">Stories</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="tips.html">Reading Tips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -27,18 +33,25 @@
       <h2>Get in Touch</h2>
       <p>Please fill out the form below. We’ll respond as soon as possible.</p>
 
-     <form action="https://formspree.io/f/xgvbreay" method="POST">
-  <label for="name">Full Name:</label><br>
-  <input type="text" id="name" name="name" required><br><br>
+      <!-- Using FormSubmit for easy email handling -->
+      <form action="https://formsubmit.co/literaturehub@gmail.com" method="POST">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
 
-  <label for="email">Email Address:</label><br>
-  <input type="email" id="email" name="_replyto" required><br><br>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
 
-  <label for="message">Message:</label><br>
-  <textarea id="message" name="message" rows="6" required></textarea><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" placeholder="Type your message here..." required></textarea>
 
-  <button type="submit" class="button">Submit</button>
-</form>
+        <button type="submit" class="button">Submit</button>
+      </form>
+    </section>
+
+    <section id="contact-info">
+      <h2>Other Ways to Contact</h2>
+      <p>If you have questions, suggestions, or requests, feel free to contact us anytime.</p>
+      <p>Email: <a href="mailto:literaturehub@gmail.com">literaturehub@gmail.com</a></p>
     </section>
   </main>
 

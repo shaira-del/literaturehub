@@ -1,5 +1,4 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +15,7 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="authors.html">Authors</a></li>
-        <li><a href="stories.html">Stories</a></li>
+        <li><a href="stories.html" class="active">Stories</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="tips.html">Reading Tips</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -31,49 +30,54 @@
     </section>
 
     <section class="highlight stories-cards">
+
+      <!-- The Old Man and the Sea -->
       <div class="story-card">
         <h3>The Old Man and the Sea</h3>
         <p>By Ernest Hemingway. A classic tale of courage, struggle, and perseverance.</p>
-        <a href="https://openlibrary.org/works/OL26298W/The_Old_Man_and_the_Sea" target="_blank" class="button">Read Story</a>
+        <div class="story-buttons">
+          <a href="https://www.sparknotes.com/lit/oldman/" target="_blank" class="button">Read Full Story</a>
+          <a href="https://www.youtube.com/watch?v=Up9WjTgg1q8" target="_blank" class="button">Watch Video</a>
+        </div>
       </div>
 
+      <!-- The Sound and the Fury -->
       <div class="story-card">
         <h3>The Sound and the Fury</h3>
         <p>By William Faulkner. A landmark novel exploring time, memory, and the human experience.</p>
-        <a href="https://openlibrary.org/works/OL15929086W/The_Sound_and_the_Fury" target="_blank" class="button">Read Story</a>
+        <div class="story-buttons">
+          <a href="https://www.sparknotes.com/lit/soundfury/" target="_blank" class="button">Read Summary</a>
+          <a href="https://www.youtube.com/watch?v=fmkCXQg2TLo" target="_blank" class="button">Watch Video</a>
+        </div>
+        <iframe width="100%" height="200"
+          src="https://www.youtube.com/embed/fmkCXQg2TLo"
+          title="The Sound and the Fury Summary"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
 
+      <!-- The Stranger -->
       <div class="story-card">
         <h3>The Stranger</h3>
         <p>By Albert Camus. A philosophical story about existentialism and the human condition.</p>
-        <a href="https://openlibrary.org/works/OL14944208W/L%27étranger" target="_blank" class="button">Read Story</a>
+        <div class="story-buttons">
+          <a href="https://www.sparknotes.com/lit/stranger/" target="_blank" class="button">Read Summary</a>
+          <a href="https://www.youtube.com/watch?v=WNCau-HbHVI" target="_blank" class="button">Watch Video</a>
+        </div>
+        <iframe width="100%" height="200"
+          src="https://www.youtube.com/embed/WNCau-HbHVI"
+          title="The Stranger Summary"
+          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture"
+          allowfullscreen>
+        </iframe>
       </div>
+
     </section>
   </main>
-<section id="comments" style="max-width:900px; margin:60px auto 40px auto; padding:20px; background:#f9f9f9; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.05);">
-  <h2>Comments & Likes</h2>
-  <p>Join the discussion below. You can leave a comment or like other comments.</p>
 
-  <div id="disqus_thread" style="margin-top:20px;"></div>
-  <script>
-    var disqus_config = function () {
-      this.page.url = "https://shaira-del.github.io/literaturehub/stories.html";  // Your page URL
-      this.page.identifier = "stories-page"; // Unique ID for this page
-    };
-    (function() {  
-      var d = document, s = d.createElement('script');
-      s.src = 'https://YOUR-DISQUS-SHORTNAME.disqus.com/embed.js';  // Replace with your Disqus shortname
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-    })();
-  </script>
-  <noscript>
-    Please enable JavaScript to view the 
-    <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-  </noscript>
-</section>
   <footer>
     <p>&copy; 2025 Literature Hub. All rights reserved.</p>
   </footer>
 </body>
-</html>
+</html>`
